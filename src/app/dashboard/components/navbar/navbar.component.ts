@@ -1,3 +1,4 @@
+import { NavbarService } from './../services/navbar.service';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
@@ -8,11 +9,13 @@ import { MenuItem } from 'primeng/api';
 })
 export class NavbarComponent implements OnInit {
   
-  constructor() { }
+  memuList: any[] = [];
+  constructor(private navbarService: NavbarService) { }
 
   ngOnInit(): void {
-
+    this.memuList = this.navbarService.memuList;    
   }
+
 
 
 }
