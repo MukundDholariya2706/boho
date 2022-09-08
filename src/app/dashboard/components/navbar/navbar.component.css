@@ -1,0 +1,12 @@
+.navigationBar {
+    margin-top: 8px;
+    border-radius: 0px;
+    height: 330px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
