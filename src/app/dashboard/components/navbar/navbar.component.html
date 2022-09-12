@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,19 +8,20 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item" *ngFor="let menuObj of memuList" [ngClass]="{'dropdown': !!menuObj?.subMenus}">
-          <a *ngIf="!!menuObj?.subMenus" class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a *ngIf="!!menuObj?.subMenus" class="nav-link dropdown-toggle header-more-item text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="menu-icon"><i class="{{menuObj?.icon}}" aria-hidden="true"></i></span>
             {{menuObj?.title}}
           </a>
 
-          <a *ngIf="!menuObj?.subMenus" class="nav-link" data-bs-dismiss="offcanvas" [routerLink]='menuObj?.link' >
+          <a *ngIf="!menuObj?.subMenus" class="nav-link text-black" data-bs-dismiss="offcanvas" [routerLink]='menuObj?.link' >
             <span class="menu-icon"><i class="{{menuObj?.icon}}" aria-hidden="true"></i></span>
             {{menuObj?.title}}
           </a>
 
-          <ul *ngIf="!!menuObj?.subMenus" class="dropdown-menu navigationBar" aria-labelledby="navbarScrollingDropdown">
+          <ul *ngIf="!!menuObj?.subMenus" class="dropdown-menu navigationBar shadow-sm" aria-labelledby="navbarScrollingDropdown">
             <li *ngFor="let smObj of menuObj?.subMenus; let smI = index;">
-              <a class="dropdown-item" data-bs-dismiss="offcanvas" [routerLink]='smObj?.link'>
+              <a class="dropdown-item text-black more-list-item" data-bs-dismiss="offcanvas" [routerLink]='smObj?.link'>
+                <div class="left-red-tape"></div>
                 <span class="menu-icon sub-menu-title"><i class="{{smObj?.icon}}" aria-hidden="true"></i></span>
                 {{smObj?.title}}
               </a>

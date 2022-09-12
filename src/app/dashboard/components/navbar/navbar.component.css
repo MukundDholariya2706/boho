@@ -1,12 +1,27 @@
 .navigationBar {
-    margin-top: 8px;
+    padding: 0px;
+    margin-top: 9px;
     border-radius: 0px;
-    height: 330px;
+    height: 220px;
     overflow-y: scroll;
     overflow-x: hidden;
+    border: none;
 }
 
 ::-webkit-scrollbar {
     width: 0px;
+}
+
+.left-red-tape{
+    position: absolute;
+    height: 10%;
+    width: 4px;
+    background: #eb595f;
+    left: 0;
+    display: none;
+}
+
+a.more-list-item:hover .left-red-tape {
+    display: block;
 }
 
