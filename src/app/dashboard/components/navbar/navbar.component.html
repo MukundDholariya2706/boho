@@ -7,13 +7,13 @@
 
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item" *ngFor="let menuObj of memuList" [ngClass]="{'dropdown': !!menuObj?.subMenus}">
-          <a *ngIf="!!menuObj?.subMenus" class="nav-link dropdown-toggle header-more-item text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <li class="nav-item" *ngFor="let menuObj of memuList" [ngClass]="{'dropdown': !!menuObj?.subMenus || !!menuObj?.subDivision}">
+          <a *ngIf="!!menuObj?.subMenus || !!menuObj?.subDivision" class="nav-link dropdown-toggle header-more-item text-black" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <span class="menu-icon"><i class="{{menuObj?.icon}}" aria-hidden="true"></i></span>
             {{menuObj?.title}}
           </a>
 
-          <a *ngIf="!menuObj?.subMenus" class="nav-link text-black" data-bs-dismiss="offcanvas" [routerLink]='menuObj?.link' >
+          <a *ngIf="!menuObj?.subMenus && !menuObj?.subDivision" class="nav-link text-black" data-bs-dismiss="offcanvas" [routerLink]='menuObj?.link' >
             <span class="menu-icon"><i class="{{menuObj?.icon}}" aria-hidden="true"></i></span>
             {{menuObj?.title}}
           </a>
@@ -27,11 +27,61 @@
               </a>
             </li>
           </ul>
+
+          <ul *ngIf="!!menuObj?.subDivision" class="dropdown-menu shadow-sm offerings-list-item subnav" aria-labelledby="navbarScrollingDropdown">
+            <div>
+
+              <div class="d-flex main-nav sm:flex">
+                <div class="types-nav bg-main">
+                <div class="type rounded relative">
+                  <a href="">
+                    <img src="assets/929202.jpg" width="308" height="132" class="rounded loaded">
+                  </a>
+                </div>
+                <div class="type rounded relative">
+                  <a href="">
+                    <img src="assets/929202.jpg" width="308" height="132" class="rounded loaded">
+                  </a>
+                </div>
+              </div>
+              <div class="menu-nav sm:flex">
+                <div class="menu-block">
+                  <div class="memu-title subtitle_small mb-4 sm:mb-2">
+                    KITCHEN
+                  </div>
+                  <ul>
+                    <li class="menu sm:py-2">
+                      <div>
+                        <a href="">
+                          <p class="nav-link body_default">Know Your Kitchen</p>
+                        </a>
+                      </div>
+                    </li>
+                    <li class="menu sm:py-2">
+                      <div>
+                        <a href="">
+                          <p class="nav-link body_default">Kitchen Price Calculator</p>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            </div>
+          </ul>
+
         </li>
       </ul>
+
+      <div class="justify-content-end">
+        <button class="btn rounded-5 border" id="consult-btn">CONSULT ONLINE NOW</button>
+
+      </div>
     </div>
     </div> 
 </nav>
+
 
 <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">

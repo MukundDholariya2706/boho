@@ -29,3 +29,64 @@ a.more-list-item:hover .left-red-tape {
     display: block;
 }
 
+#consult-btn{
+    border-radius: 24px;
+    font-size: 12px;
+    letter-spacing: .5px;
+    background-color: #eb595f;
+    color: white;
+    padding: 8px 36px;
+}
+
+div.type:not(:last-child) {
+    margin-bottom: 1.25rem;
+}
+
+.relative {
+    position: relative;
+}
+
+.bg-main {
+    background-color: #f5f4f5;
+}
+
+.types-nav{
+    padding: 1.5rem;
+}
+
+.offerings-list-item{
+    padding: 0;
+    width: 900px;
+    height: 337px;
+}
+
+.menu-block{
+    padding: 1.5rem;
+}
+
+.menu{
+    border-bottom: 2px solid #f5f4f5;
+}
+
+.body_default, .subtitle_default{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .menu-title {
+      background-color: lightblue;
+    }
+}
+
+@media (min-width: 640px){
+    .sm\:mb-2 {
+        margin-bottom: 0.5rem;
+    }
+}
