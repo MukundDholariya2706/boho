@@ -27,10 +27,26 @@ a {
   margin-bottom: 2.5rem;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 ol, ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.body_large, .subtitle_large {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.wrapper-class{
+  max-width: 1150px;
+  margin: auto;
+  padding: 0 32px;
 }
 
 @media (min-width: 640px) {

@@ -18,3 +18,32 @@
 .carousel-control-next{
     right: 30px;
 }
+
+.home-page-body>div:nth-child(odd){
+    background-color: white;
+}
+
+.home-page-body>div:nth-child(2n){
+    background-color: #f5f4f5;
+}
+
+.heading-section{
+    max-width: 795px;
+}
+
+h2{
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.one-step-shop .subtitle-block{
+    margin-top: 8px;
+    max-width: 795px;
+}
+
+@media (min-width: 1024px) {
+    .lg\:py-20 {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
