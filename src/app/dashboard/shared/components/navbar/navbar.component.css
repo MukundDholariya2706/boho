@@ -8,6 +8,12 @@
     border: none;
 }
 
+.sticky{
+    position: fixed;
+    background: white;
+    width: 100%;
+}
+
 .container-fluid{
     margin: 10px;
 }

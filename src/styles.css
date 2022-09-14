@@ -22,6 +22,11 @@ a {
   padding-bottom: 2.5rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 ol, ul {
   list-style: none;
   margin: 0;
@@ -44,4 +49,11 @@ ol, ul {
 .body_small, .location-link{
   font-size: 14px;
   line-height: 20px;
+}
+
+.hr {
+  width: 100%;
+  border-bottom: 1px solid #d9d6d8;
+  border-bottom: 1px solid #d9d6d8;
+  opacity: 1;
 }
