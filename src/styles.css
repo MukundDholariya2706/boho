@@ -1,11 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  border: 0 solid;
+}
+
 a {
-  color: inherit;
-  text-decoration: none !important;
+  color: inherit ;
+  text-decoration: none ;
   outline: none;
 }
 
-ul {
+a {
+  background-color: transparent;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pb-10{
+  padding-bottom: 2.5rem;
+}
+
+ol, ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -22,4 +39,9 @@ ul {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
   }
+}
+
+.body_small, .location-link{
+  font-size: 14px;
+  line-height: 20px;
 }

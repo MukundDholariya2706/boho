@@ -6,10 +6,11 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { DashboardComponent } from './dashboard.component';
 import { FooterBarComponent } from './shared/components/footer-bar/footer-bar.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
-  declarations: [DashboardComponent, NavbarComponent, FooterBarComponent],
+  declarations: [DashboardComponent, NavbarComponent, FooterBarComponent, HomeComponent],
   imports: [
     CommonModule,
     DashboardRoutingModule,
