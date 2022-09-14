@@ -2,9 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-dashboard',
-  template: `
-    <app-navbar></app-navbar>
-  `,
+  templateUrl: './dashboard.component.html',
   styles: [
   ]
 })

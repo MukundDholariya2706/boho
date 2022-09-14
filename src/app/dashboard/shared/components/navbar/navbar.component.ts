@@ -1,4 +1,4 @@
-import { NavbarService } from './../services/navbar.service';
+import { NavbarService } from '../../services/navbar.service';
 import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
