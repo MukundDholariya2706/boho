@@ -1,0 +1,7 @@
+.home-page-body>div:nth-child(odd){
+    background-color: white;
+}
+
+.home-page-body>div:nth-child(2n){
+    background-color: #f5f4f5;
+}

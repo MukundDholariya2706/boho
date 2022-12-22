@@ -2,31 +2,6 @@
     width: 100%;
 }
 
-.carousel-control-next, .carousel-control-prev{
-    width: auto;
-}
-
-.carousel-control-prev-icon, .carousel-control-next-icon{
-    border-radius: 100%;
-    color: black;
-}
-
-.carousel-control-prev {
-    left: 30px;
-}
-
-.carousel-control-next{
-    right: 30px;
-}
-
-.home-page-body>div:nth-child(odd){
-    background-color: white;
-}
-
-.home-page-body>div:nth-child(2n){
-    background-color: #f5f4f5;
-}
-
 .heading-section{
     max-width: 795px;
 }
