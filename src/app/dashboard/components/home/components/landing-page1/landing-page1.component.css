@@ -5,3 +5,7 @@
 .home-page-body>div:nth-child(2n){
     background-color: #f5f4f5;
 }
+
+.new-wrapper-class, .wrapper-class {
+    padding: 0 32px;
+}

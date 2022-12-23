@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/variable.scss';
+
 * {
   box-sizing: border-box;
   border: 0 solid;
@@ -8,6 +10,10 @@ a {
   color: inherit ;
   text-decoration: none ;
   outline: none;
+}
+
+a:hover {
+  color: inherit;
 }
 
 a {
@@ -72,4 +78,10 @@ ol, ul {
   border-bottom: 1px solid #d9d6d8;
   border-bottom: 1px solid #d9d6d8;
   opacity: 1;
+}
+
+.h-tag, h1, h2, h3, h4, h5, h6 {
+  color: #41303e;
+  color: var(--secondary-dark);
+  font-weight: 700;
 }
