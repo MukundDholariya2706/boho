@@ -1,12 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
+interface FOOTERDATA {
+  title: string;
+  link: string;
+}
+
 @Component({
   selector: 'app-footer-bar',
   templateUrl: './footer-bar.component.html',
   styleUrls: ['./footer-bar.component.css'],
 })
 export class FooterBarComponent implements OnInit {
-  locationList: any = [];
+  locationList: FOOTERDATA[] = [];
 
   constructor() {}
 
@@ -14,7 +19,7 @@ export class FooterBarComponent implements OnInit {
     this.getLocation();
   }
 
-  getLocation() {
+  getLocation(): void{
     this.locationList = [
       {
         title: 'Interior Designer in Delhi',
