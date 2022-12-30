@@ -8,9 +8,10 @@ interface FOOTERDATA {
 @Component({
   selector: 'app-footer-bar',
   templateUrl: './footer-bar.component.html',
-  styleUrls: ['./footer-bar.component.css'],
+  styleUrls: ['./footer-bar.component.scss'],
 })
 export class FooterBarComponent implements OnInit {
+
   locationList: FOOTERDATA[] = [];
 
   constructor() {}
@@ -22,51 +23,51 @@ export class FooterBarComponent implements OnInit {
   getLocation(): void{
     this.locationList = [
       {
-        title: 'Interior Designer in Delhi',
+        title: 'Delhi',
         link: '',
       },
       {
-        title: 'Interior Designer in Gurugram',
+        title: 'Gurugram',
         link: '',
       },
       {
-        title: 'Interior Designer in Noida',
+        title: 'Noida',
         link: '',
       },
       {
-        title: 'Interior Designer in Indore',
+        title: 'Indore',
         link: '',
       },
       {
-        title: 'Interior Designer in Lucknow',
+        title: 'Lucknow',
         link: '',
       },
       {
-        title: 'Interior Designer in Ghaziabad',
+        title: 'Ghaziabad',
         link: '',
       },
       {
-        title: 'Interior Designer in Faridabad',
+        title: 'Faridabad',
         link: '',
       },
       {
-        title: 'Interior Designer in Bengaluru',
+        title: 'Bengaluru',
         link: '',
       },
       {
-        title: 'Interior Designer in Chennai',
+        title: 'Chennai',
         link: '',
       },
       {
-        title: 'Interior Designer in Hyderabad',
+        title: 'Hyderabad',
         link: '',
       },
       {
-        title: 'Interior Designer in Kochi',
+        title: 'Kochi',
         link: '',
       },
       {
-        title: 'Interior Designer in Mysore',
+        title: 'Mysore',
         link: '',
       },
       {
